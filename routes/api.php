@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProjetController;
+use App\Http\Controllers\TacheController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -14,4 +16,7 @@ Route::middleware('auth:sanctum')->group(function () {
     });
 
     Route::post('/logout', [AuthController::class, 'logout']);
+    Route::apiResource('projet', ProjetController::class);
+    Route::apiResource('tache', TacheController::class);
+
 });

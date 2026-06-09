@@ -28,7 +28,7 @@ class ProjetController extends Controller
      */
     public function show(Projet $projet)
     {
-        //
+        return response()->json($projet->load('taches.utilisateur'), 200);
     }
 
     /**
