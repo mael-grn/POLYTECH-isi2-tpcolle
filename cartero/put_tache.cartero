@@ -1,0 +1,15 @@
+version = 1
+url = "http://127.0.0.1:8000/api/tache/3"
+method = "PUT"
+
+[body]
+type = "raw"
+format = "json"
+body = """
+{
+    "etat": true
+}"""
+
+[authorization]
+type = "bearer"
+token = "i3RUlojVlt0Pe4P1GKmI9quWw8qPlhtToeLecw3t7f91f21e"

@@ -1,0 +1,10 @@
+version = 1
+url = "http://127.0.0.1:8000/api/projet/1"
+method = "GET"
+
+[headers]
+Accept = "application/json"
+
+[authorization]
+type = "bearer"
+token = "njhNj8ORyrNRpTBp0NOG5hZOC7neEcOjQxKuPbr6cdaf3b25"

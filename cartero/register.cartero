@@ -1,0 +1,18 @@
+version = 1
+url = "http://127.0.0.1:8000/api/register"
+method = "POST"
+
+[body]
+type = "raw"
+format = "json"
+body = """
+{
+    "name": "Mael",
+    "surname": "Garnier",
+    "email": "mael.garnier@example.com",
+    "password": "12345678",
+    "password_confirmation": "12345678"
+}"""
+
+[headers]
+Accept = "application/json"
